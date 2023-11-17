@@ -1,0 +1,176 @@
+@mixin dimension($x,$y){
+    height: $y;
+    width: $x;
+}
+@mixin communUl(){
+    display: flex;
+    gap: 20px;
+    
+     li{
+     
+         a{
+             color: white;
+             padding: 1px;
+             
+
+         }
+         &::after{
+          content: '';
+          height: 2px;
+          width: 0;
+          background-color: red;
+          display: block;
+          transition:  .5s;
+         }
+         &:hover:after{
+        
+          width: 100%;
+         }
+     }
+}
+@mixin button(){
+    
+    transition: all ease-in-out .5s;
+    &:hover{
+      background-color: red;
+    }
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+}
+@mixin headerStyle($url){
+    main{
+        background-image: url($url);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include dimension(auto,550px);
+      
+    }
+    header{
+      @include dimension(auto,550px);
+      background-color: rgb(0, 0, 0);
+      opacity: .7;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        @include dimension(auto,550px);
+    
+        nav{
+            padding-left: 40px;
+            padding-right: 40px;
+            opacity: initial;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+    
+            .icone{
+              color: white;
+              transform: scale(3);
+              display: none;
+            }
+          a{
+            &:nth-child(1){
+                @include dimension(50px,70px);
+                margin-top: 20px;
+                img{
+                    @include dimension(50px,70px);
+                }
+            }
+          }
+         div{
+            ul{
+              @include communUl();
+    
+    
+    
+              }
+         }
+          
+        }
+      &>div{
+        @include dimension(auto,auto);
+        text-align: center;
+        color: white;
+        
+    
+        h1{
+            margin-bottom:  30px;
+            font-size: 40px;
+            word-spacing: 15px;
+            font-style: normal;
+            font-weight: bolder;
+           
+        }
+        p{
+          margin-bottom: 30px;
+        }
+        a{
+          @include button();
+        }
+      }
+    
+    
+    }
+    
+    @media screen and (max-width:540px) {
+    
+    
+    header{
+    
+    
+     nav{
+      padding-left: 20px;
+      padding-right: 20px;
+      
+      .icone{
+        
+        display: block;
+      }
+      .hide{
+        
+        @include dimension(0,450px );
+       
+      }
+       div{
+        transition: all ease-in-out 1s;
+        background-color: red;
+        opacity: .8;
+        position: absolute;
+        @include dimension(150px,450px);
+        right: 0;
+        top: 100px;
+        ul{
+          flex-direction: column;
+          margin-top: 100px;
+         margin-left: 30px;
+         
+
+         
+    } 
+       }
+        
+          
+         
+    
+     }
+    
+    &>div{
+      h1{
+      
+        font-size: 30px;
+        word-spacing: 10px;
+        
+      
+      }
+    }
+    }
+      
+    
+    
+    }
+    
+    
+    
+}
+

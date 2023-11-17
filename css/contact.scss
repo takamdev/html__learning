@@ -1,0 +1,126 @@
+@import "components/reset";
+@import "components/mixins";
+
+
+// caracteristique de l`entete de pages et  petit ecran pour l`entete
+@include headerStyle("../image/02.jpg");
+main{
+&>div{
+    margin-top: 30px;
+    @include dimension(auto, 600px);
+    background-image: url(../image/integration-carte-google-maps.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+section{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    @include dimension(100%,auto);
+    padding-left: 5%;
+    padding-right: 5%;
+    flex-wrap: wrap;
+    article{
+        @include dimension(450px,400px);
+    
+       
+        &:nth-child(1){
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            padding-left: 100px;
+            div{
+                .icone{
+                    color: red;
+                    margin-bottom: 20px;
+                }
+                p{
+                    margin-left: 20px;
+                }
+            }
+
+        }
+        &:nth-child(2){
+            margin-top: 10px;
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 17px;
+                input{
+                    text-align: center;
+                    border-color: blue;
+                    padding: 10px;
+                }
+                textarea{
+                    
+                    border-color: blue;
+                    padding-top: 10px;
+                    text-align:center;
+                }
+                button{
+                    border-color: blue;
+                    padding: 10px;
+                    @include dimension(100px, auto);
+                }
+            }
+            
+        }
+
+
+
+
+    
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+footer{
+    h2{
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    line-height: 30px;
+    text-align: justify;
+    text-align: center;
+    
+  div{
+    p{
+      text-align: center;
+    }
+  }
+  }
+
+}

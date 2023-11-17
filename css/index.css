@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+main {
+  background-image: url("../image/campus-universitaire-9140354.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 550px;
+  width: auto;
+}
+
+header {
+  height: 550px;
+  width: auto;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  height: 550px;
+  width: auto;
+}
+header nav {
+  padding-left: 40px;
+  padding-right: 40px;
+  opacity: initial;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .icone {
+  color: white;
+  transform: scale(3);
+  display: none;
+}
+header nav a:nth-child(1) {
+  height: 70px;
+  width: 50px;
+  margin-top: 20px;
+}
+header nav a:nth-child(1) img {
+  height: 70px;
+  width: 50px;
+}
+header nav div ul {
+  display: flex;
+  gap: 20px;
+}
+header nav div ul li a {
+  color: white;
+  padding: 1px;
+}
+header nav div ul li::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background-color: red;
+  display: block;
+  transition: 0.5s;
+}
+header nav div ul li:hover:after {
+  width: 100%;
+}
+header > div {
+  height: auto;
+  width: auto;
+  text-align: center;
+  color: white;
+}
+header > div h1 {
+  margin-bottom: 30px;
+  font-size: 40px;
+  word-spacing: 15px;
+  font-style: normal;
+  font-weight: bolder;
+}
+header > div p {
+  margin-bottom: 30px;
+}
+header > div a {
+  transition: all ease-in-out 0.5s;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+}
+header > div a:hover {
+  background-color: red;
+}
+
+@media screen and (max-width: 540px) {
+  header nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header nav .icone {
+    display: block;
+  }
+  header nav .hide {
+    height: 450px;
+    width: 0;
+  }
+  header nav div {
+    transition: all ease-in-out 1s;
+    background-color: red;
+    opacity: 0.8;
+    position: absolute;
+    height: 450px;
+    width: 150px;
+    right: 0;
+    top: 100px;
+  }
+  header nav div ul {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 30px;
+  }
+  header > div h1 {
+    font-size: 30px;
+    word-spacing: 10px;
+  }
+}
+main article h2:nth-child(6) {
+  text-align: center;
+  margin: 20px auto;
+}
+main article:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  gap: 20px;
+}
+main article:nth-child(2) section:nth-child(5) {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+main article:nth-child(2) section:nth-child(5) div {
+  height: 500px;
+  width: 400px;
+  background-size: cover;
+  position: relative;
+}
+main article:nth-child(2) section:nth-child(5) div:hover p {
+  height: 100%;
+  width: 400px;
+  padding-top: 50%;
+}
+main article:nth-child(2) section:nth-child(5) div p {
+  transition: all ease-in-out 0.5s;
+  height: 0;
+  width: 400px;
+  background-color: red;
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+main article:nth-child(2) section:nth-child(5) div:nth-child(1) {
+  background-image: url(../image/doul1.jpg);
+}
+main article:nth-child(2) section:nth-child(5) div:nth-child(2) {
+  background-image: url(../image/image.webp);
+}
+main article:nth-child(2) section:nth-child(5) div:nth-child(3) {
+  background-image: url(../image/sport-universitaire.jpg);
+}
+main article:nth-child(2) section:nth-child(1) {
+  text-align: center;
+}
+main article:nth-child(2) section:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+main article:nth-child(2) section:nth-child(2) div {
+  padding: 20px;
+  height: 250px;
+  width: 250px;
+  background-color: antiquewhite;
+  text-align: center;
+  border-radius: 10px;
+}
+main article:nth-child(2) section:nth-child(2) div:hover {
+  box-shadow: 2px 3px 4px black;
+  transform: scale(1.08);
+  transition: all ease 0.5s;
+}
+main article:nth-child(2) section:nth-child(2) div h3 {
+  margin-bottom: 20px;
+}
+main article:nth-child(2) section:nth-child(8) {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-left: 55px;
+  margin-right: 25px;
+}
+main article:nth-child(2) section:nth-child(8) p span {
+  font-size: 20px;
+  font-weight: bold;
+}
+main article:nth-child(2) section:nth-child(8) p img {
+  border-radius: 20px;
+  height: 300px;
+  width: 400px;
+}
+main article h2:nth-child(3) {
+  text-align: center;
+}
+main article h2:nth-child(6) {
+  text-align: center;
+}
+main article p:nth-child(4) {
+  margin-top: -20px;
+  text-align: center;
+}
+main article p:nth-child(7) {
+  margin-top: -20px;
+  text-align: center;
+}
+main article:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  gap: 20px;
+}
+main article:nth-child(3) h2 {
+  text-align: center;
+  font-size: 40px;
+  word-spacing: 5px;
+}
+main article:nth-child(3) p:nth-child(2) {
+  margin-top: -20px;
+  text-align: center;
+}
+main article:nth-child(3) section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main article:nth-child(3) section:nth-child(3) div {
+  position: relative;
+  height: 200px;
+  width: 400px;
+  padding: 35px;
+  background-color: rgb(240, 240, 191);
+  border-radius: 10px;
+}
+main article:nth-child(3) section:nth-child(3) div p {
+  text-align: justify;
+  margin-left: 30px;
+  margin-top: 3px;
+  line-height: 20px;
+}
+main article:nth-child(3) section:nth-child(3) div p span {
+  font-weight: 50px;
+  font-weight: bold;
+}
+main article:nth-child(3) section:nth-child(3) div img {
+  position: absolute;
+  left: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+main article:nth-child(3) section:nth-child(4) {
+  margin-bottom: 30px;
+  margin-left: 5%;
+  background-image: url(../image/groupe-de-travail-min.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 90%;
+}
+main article:nth-child(3) section:nth-child(4) div {
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+}
+main article:nth-child(3) section:nth-child(4) div p:nth-child(1) {
+  margin-top: 100px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+main article:nth-child(3) section:nth-child(4) div p:nth-child(2) {
+  transition: all ease-in-out 0.5s;
+  margin-left: 42%;
+  padding: 10px;
+  height: auto;
+  width: 200px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  border: 1px solid white;
+}
+main article:nth-child(3) section:nth-child(4) div p:nth-child(2):hover {
+  background-color: red;
+  opacity: 0.8;
+}
+main article:nth-child(3) section:nth-child(4) div p:nth-child(2) a {
+  color: white;
+}
+
+footer {
+  line-height: 30px;
+  text-align: justify;
+  text-align: center;
+}
+footer h2 {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+footer div p {
+  text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+  main article section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main article section:nth-child(5) {
+    flex-direction: column;
+    align-items: center;
+  }
+  main article section:nth-child(8) {
+    flex-direction: column;
+    align-items: center;
+  }
+  main article:nth-child(2) section:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+  }
+  main article:nth-child(3) section:nth-child(3) {
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=index.css.map */

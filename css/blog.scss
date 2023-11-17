@@ -1,0 +1,82 @@
+@import "components/reset";
+@import "components/mixins";
+
+
+// caracteristique de l`entete de pages et  petit ecran pour l`entete
+@include headerStyle("../image/02.jpg");
+
+main{
+
+table{
+    @include dimension(50%,auto);
+    margin: 30px 25%;
+    
+    thead{
+       
+        text-align: center;
+        tr{
+              background-color: rgb(230, 48, 48); 
+              
+              td{ 
+                padding: 5px 40px;
+              @include dimension(600px,auto);
+                color: white; font-size: 25px; font-weight: bold;
+            
+            
+            }
+        }
+    }
+    tbody{
+        
+        
+      tr{ 
+        transition: all ease-in-out .5s;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(255, 0, 0);
+         }
+        padding: 20px;
+        td{
+            
+            padding-left: 30px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        color: black; font-size: 18px;
+        
+    
+         } 
+}
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    h2{
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    line-height: 30px;
+    text-align: justify;
+    text-align: center;
+    
+  div{
+    p{
+      text-align: center;
+    }
+  }
+  }
